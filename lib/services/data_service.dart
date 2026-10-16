@@ -17,6 +17,14 @@ class DataService {
     return _carregarLista('assets/comentarios.json', Comentario.fromJson);
   }
 
+  /// Carrega apenas os comentários de um evento específico.
+  Future<List<Comentario>> carregarComentariosDoEvento(int eventoId) async {
+    final comentarios = await carregarComentarios();
+    return comentarios
+        .where((comentario) => comentario.eventoId == eventoId)
+        .toList();
+  }
+
   Future<List<Usuario>> carregarUsuarios() async {
     return _carregarLista('assets/usuarios.json', Usuario.fromJson);
   }

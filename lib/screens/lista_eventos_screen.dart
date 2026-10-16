@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/evento.dart';
 import '../services/data_service.dart';
+import 'detalhes_evento_screen.dart';
 
 /// Tela inicial: lista todos os eventos do campus,
 /// com filtro por tipo (Todos, Palestra, Oficina).
@@ -96,10 +97,11 @@ class _ListaEventosScreenState extends State<ListaEventosScreen> {
                         ),
                         isThreeLine: true,
                         onTap: () {
-                          // A tela de detalhes será criada na próxima etapa.
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Detalhes do evento: próxima etapa.'),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (contexto) =>
+                                  DetalhesEventoScreen(evento: evento),
                             ),
                           );
                         },
