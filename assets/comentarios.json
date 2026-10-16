@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "eventoId": 1,
+    "usuario": "Ana Souza",
+    "texto": "Tema muito atual! Vou participar com certeza.",
+    "data": "08/10/2026"
+  },
+  {
+    "id": 2,
+    "eventoId": 1,
+    "usuario": "Carlos Junior",
+    "texto": "Excelente oportunidade para quem está fazendo TCC com IA.",
+    "data": "09/10/2026"
+  },
+  {
+    "id": 3,
+    "eventoId": 2,
+    "usuario": "Bruno Lima",
+    "texto": "Precisa levar notebook próprio ou o laboratório já tem os kits?",
+    "data": "09/10/2026"
+  },
+  {
+    "id": 4,
+    "eventoId": 3,
+    "usuario": "Fernanda Rocha",
+    "texto": "Essa palestra devia ser obrigatória, todo mundo precisa saber desses cuidados.",
+    "data": "10/10/2026"
+  },
+  {
+    "id": 5,
+    "eventoId": 6,
+    "usuario": "Juliana Dias",
+    "texto": "Fiz uma oficina parecida no semestre passado e me ajudou demais no estágio.",
+    "data": "11/10/2026"
+  },
+  {
+    "id": 6,
+    "eventoId": 8,
+    "usuario": "Rafael Prado",
+    "texto": "Primeiros socorros é conhecimento que todo mundo devia ter. Já garanti minha vaga!",
+    "data": "12/10/2026"
+  }
+]

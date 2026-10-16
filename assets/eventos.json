@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "titulo": "Inteligência Artificial na Educação: o que muda na sala de aula",
+    "tipo": "palestra",
+    "data": "05/11/2026",
+    "horario": "19:00",
+    "local": "Auditório Principal",
+    "palestrante": "Prof. Dr. Carlos Eduardo Mendes (IFBA)",
+    "descricao": "Panorama dos usos de IA no ensino, de correção automática a tutoria inteligente, com bate-papo sobre ética. Aberta a todos os cursos.",
+    "vagas": 150
+  },
+  {
+    "id": 2,
+    "titulo": "Oficina de Robótica com Arduino",
+    "tipo": "oficina",
+    "data": "07/11/2026",
+    "horario": "14:00",
+    "local": "Laboratório de Informática 1",
+    "palestrante": "Prof. João Batista Santos (IFBA)",
+    "descricao": "Montagem e programação de um robô seguidor de linha. Os kits e os notebooks são fornecidos no local.",
+    "vagas": 20
+  },
+  {
+    "id": 3,
+    "titulo": "Segurança da Informação: como proteger seus dados",
+    "tipo": "palestra",
+    "data": "10/11/2026",
+    "horario": "19:00",
+    "local": "Auditório Principal",
+    "palestrante": "Dra. Marina Ribeiro (perícia digital)",
+    "descricao": "Senhas, golpes digitais e redes wi-fi públicas: dicas práticas para proteger suas contas pessoais e acadêmicas.",
+    "vagas": 120
+  },
+  {
+    "id": 4,
+    "titulo": "Design de Interfaces com Figma",
+    "tipo": "oficina",
+    "data": "12/11/2026",
+    "horario": "09:00",
+    "local": "Laboratório de Multimídia",
+    "palestrante": "Ana Paula Oliveira (designer de UX)",
+    "descricao": "Do wireframe ao protótipo navegável. É preciso criar uma conta gratuita no Figma antes da oficina.",
+    "vagas": 25
+  },
+  {
+    "id": 5,
+    "titulo": "Mulheres na Ciência: percursos e desafios",
+    "tipo": "palestra",
+    "data": "13/11/2026",
+    "horario": "10:00",
+    "local": "Sala de Vídeo 2",
+    "palestrante": "Profa. Dra. Helena Costa (UFBA)",
+    "descricao": "Painel com pesquisadoras das áreas de exatas sobre carreira, representatividade e o dia a dia da pesquisa.",
+    "vagas": 60
+  },
+  {
+    "id": 6,
+    "titulo": "Programação Mobile com Flutter: do zero ao primeiro app",
+    "tipo": "oficina",
+    "data": "14/11/2026",
+    "horario": "14:00",
+    "local": "Laboratório de Informática 2",
+    "palestrante": "Prof. Rafael Almeida (IFBA)",
+    "descricao": "Criação de um aplicativo simples em Dart/Flutter, com lista e navegação entre telas. Requisito: noções de lógica de programação.",
+    "vagas": 30
+  },
+  {
+    "id": 7,
+    "titulo": "Sustentabilidade no Campus: reciclagem e consumo consciente",
+    "tipo": "palestra",
+    "data": "18/11/2026",
+    "horario": "18:30",
+    "local": "Auditório Secundário",
+    "palestrante": "Eng. Paulo Ferreira (coordenação ambiental)",
+    "descricao": "Resultados do programa de reciclagem do campus e ações práticas que os estudantes podem adotar no dia a dia.",
+    "vagas": 80
+  },
+  {
+    "id": 8,
+    "titulo": "Primeiros Socorros para Estudantes",
+    "tipo": "oficina",
+    "data": "19/11/2026",
+    "horario": "08:00",
+    "local": "Ginásio Poliesportivo",
+    "palestrante": "Enf. Juliana Dias (Corpo de Bombeiros)",
+    "descricao": "Noções de atendimento em emergências: engasgo, queimaduras e reanimação cardiopulmonar, com prática em manequins.",
+    "vagas": 40
+  },
+  {
+    "id": 9,
+    "titulo": "Empreendedorismo Digital: do zero ao primeiro cliente",
+    "tipo": "palestra",
+    "data": "21/11/2026",
+    "horario": "19:00",
+    "local": "Auditório Principal",
+    "palestrante": "Marcos Vinícius Teixeira (empreendedor)",
+    "descricao": "Como validar uma ideia, montar um perfil profissional e conquistar os primeiros clientes usando ferramentas gratuitas.",
+    "vagas": 100
+  },
+  {
+    "id": 10,
+    "titulo": "Redes de Computadores na Prática",
+    "tipo": "oficina",
+    "data": "25/11/2026",
+    "horario": "13:30",
+    "local": "Laboratório de Redes",
+    "palestrante": "Prof. Diego Barbosa (IFBA)",
+    "descricao": "Cabeamento estruturado, endereçamento IP e configuração de roteadores usando os equipamentos reais do laboratório.",
+    "vagas": 18
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Souza",
+    "email": "ana.souza@aluno.ifba.edu.br",
+    "senha": "123456"
+  },
+  {
+    "id": 2,
+    "nome": "Bruno Lima",
+    "email": "bruno.lima@aluno.ifba.edu.br",
+    "senha": "senha123"
+  }
+]
