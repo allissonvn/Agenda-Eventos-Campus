@@ -6,6 +6,7 @@ import '../services/app_state.dart';
 import '../services/data_service.dart';
 import 'detalhes_evento_screen.dart';
 import 'login_screen.dart';
+import 'meus_eventos_screen.dart';
 
 /// Tela inicial: lista todos os eventos do campus, com filtro por
 /// tipo (Todos, Palestra, Oficina). A barra superior mostra "Entrar"
@@ -35,6 +36,13 @@ class _ListaEventosScreenState extends State<ListaEventosScreen> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (contexto) => const LoginScreen()),
+    );
+  }
+
+  void _abrirMeusEventos() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (contexto) => const MeusEventosScreen()),
     );
   }
 
@@ -78,6 +86,11 @@ class _ListaEventosScreenState extends State<ListaEventosScreen> {
                       Text(usuario.nome),
                     ],
                   ),
+                ),
+                TextButton.icon(
+                  onPressed: _abrirMeusEventos,
+                  icon: const Icon(Icons.event_available),
+                  label: const Text('Meus eventos'),
                 ),
                 TextButton(
                   onPressed: _appState.sair,
