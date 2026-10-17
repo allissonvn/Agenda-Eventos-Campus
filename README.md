@@ -1,39 +1,41 @@
 # Agenda de Eventos do Campus
 
-App em Flutter/Dart para a avaliação de Programação Móvel (IFBA), com o tema "Agenda de Eventos do Campus".
+App em Flutter/Dart desenvolvido para a avaliação de Programação Móvel (IFBA), com o tema "Agenda de Eventos do Campus".
 
-O aplicativo lista os eventos do campus (palestras e oficinas) com detalhes, comentários e confirmação de presença. Visitantes navegam e leem o conteúdo; usuários logados também confirmam presença e publicam comentários. Todos os dados vêm de JSON estáticos em `assets/` e nada é persistido — as presenças e os comentários criados existem apenas em memória.
+O aplicativo lista os eventos do campus (palestras e oficinas) com detalhes e comentários. Visitantes podem ver a lista, filtrar e ver os detalhes e os comentários; usuários logados também podem confirmar presença, publicar comentários e ver seus eventos.
 
-## Como instalar e rodar
+O login é **mockado** (usuários fixos em `assets/usuarios.json`) e todos os dados vêm de **JSON estáticos** em `assets/` — nada é persistido, tudo fica em memória durante a sessão.
+
+## Como executar
 
 Pré-requisito: [Flutter SDK](https://docs.flutter.dev/get-started/install) (Dart `^3.13.5`).
 
-1. Instale as dependências:
+Instale as dependências:
 
-```bash
+```
 flutter pub get
 ```
 
-2. Rode o app em um dos alvos abaixo.
+Execute no navegador (qualquer navegador, porta fixa):
 
-**Navegador (qualquer navegador, porta fixa):**
-
-```bash
+```
 flutter run -d web-server --web-port 8080
 ```
 
 Depois abra [http://localhost:8080](http://localhost:8080) no navegador.
 
-**Navegador (Chrome):**
+Outros alvos:
 
-```bash
+```
 flutter run -d chrome
+flutter run -d windows
+flutter run -d linux
 ```
 
-**Desktop Windows:**
+Em emulador Android:
 
-```bash
-flutter run -d windows
+```
+flutter run
 ```
 
 ## Usuários de teste (login mockado)
@@ -52,16 +54,15 @@ Qualquer outro e-mail ou senha mostra a mensagem "E-mail ou senha inválidos.".
 ### Visitante (sem login)
 
 - Ver a lista de todos os eventos, com filtro por tipo (**Todos / Palestra / Oficina**)
-- Ver os detalhes de um evento: tipo, data, horário, local, palestrante, vagas e descrição
-- Ler os comentários de cada evento
-- Fazer login pelo botão "Entrar" na barra superior
+- Ver os detalhes de um evento (tipo, data, horário, local, palestrante, vagas e descrição)
+- Ver os comentários de cada evento
+- Fazer login pelo botão "Entrar"
 
 ### Usuário logado
 
-- Tudo o que o visitante pode fazer, e ainda:
-- **Confirmar presença** em um evento — o botão alterna para "Cancelar presença" e as vagas são ajustadas na hora (na lista e nos detalhes)
-- **Publicar comentários** nos eventos, que aparecem com o nome do usuário e a data de hoje
-- Abrir a tela **"Meus eventos"** (botão na barra superior), com os eventos em que confirmou presença — título, data e local, abrindo os detalhes ao tocar
-- Fazer **logoff** ("Sair") pela lista de eventos ou pela tela "Meus eventos"
+- **Confirmar presença** em eventos — o botão alterna para "Cancelar presença" e as vagas são ajustadas na hora
+- **Comentar** nos eventos — o comentário aparece com o nome do usuário e a data
+- Ver a tela **"Meus eventos"**: os eventos em que confirmou presença, com título, data e local
+- **Sair** (logoff) pela lista de eventos ou pela tela "Meus eventos"
 
-Obs.: nada é salvo em disco — ao reiniciar o aplicativo, os dados voltam ao estado original dos JSONs.
+Obs.: presenças e comentários criados durante a sessão ficam apenas em memória — ao reiniciar o aplicativo, os dados voltam ao estado original dos JSONs.
